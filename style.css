@@ -1,0 +1,120 @@
+/* index.html css*/
+.hero,
+.cta {
+  background: #957f5f;
+  height: 800px;
+  opacity: 0.7;
+  
+}
+
+.cta {
+  height: 500px;
+  
+}
+
+footer {
+  color: white;
+  height: 50px;
+  background: #957f5f !important;
+}
+
+footer strong {
+  color: turquoise;
+  border-top: 30px;
+}
+
+footer a {
+  color: turquoise;
+  border-top: 30px;
+}
+
+.title {
+  color: white;
+  font-weight: 800;
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 30px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 1.2rem;
+  
+}
+
+hr.content-divider {
+  max-width: 75px;
+  height: 1px;
+}
+
+#parallax-1 {
+  background: url("https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  
+}
+
+#parallax-1 hr {
+  background: coral;
+}
+
+#parallax-2 {
+  background: url("https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  
+}
+
+#parallax-2 hr {
+  background: #76aac4;
+}
+
+#parallax-3 {
+  background: url("https://images.unsplash.com/photo-1515459961680-58264ee27219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#parallax-3 hr {
+  background: hotpink;
+}
+
+.label {
+  color: white;
+}
+
+input {
+  background: transparent !important;
+  border: 1px solid turquoise !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+/* shop.html css */
+
+html,body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.hero.is-info {
+  background: #957f5f;
+}
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.hero .subtitle {
+  padding: 3rem 0;
+  line-height: 1.5;
+}
