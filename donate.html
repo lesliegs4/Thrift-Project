@@ -5,23 +5,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing - Free Bulma template</title>
+  <title>Thrift Project- Donate</title>
   <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <section class="hero is-info is-fullheight">
+  <section class="hero is-info is-fullheight" id="donate">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item" href="../">
-              <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+            <a class="navbar-img" href="index.html" id="logo">
+              <img
+                src="https://cdn.discordapp.com/attachments/779089332539359262/1004112277974290432/Untitled_Notebook-2.jpg"
+                alt="Logo" width="150" height="200">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -43,14 +45,18 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
+                <a class="button is-white is-outlined" href="nonprofits.html">
                   <span>Nonprofits</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined"
-                  href="donate.html">
+                <a class="button is-white is-outlined" href="donate.html">
                   <span>Donate</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="login.html">
+                  <span>Log In</span>
                 </a>
               </span>
             </div>
@@ -59,16 +65,75 @@
       </nav>
     </div>
 
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-6 is-offset-3">
-                        <h1 class="title">
-                            Donate Today!
-                        </h1>
-                        <h2 class="subtitle">
-                            Thrift Project's success relies on donators like yourself. Help make a difference in the world today by uploading your items to our website!
-                        </h2>
-                        <div class="box">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+          <h1 class="title">
+            Donate Today!
+          </h1>
+          <h2 class="subtitle">
+            Thrift Project's success relies on donators like yourself. Help make a difference in the world today by
+            uploading your items to our website!
+          </h2>
+          <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email Address</label><br>
+            <input type="text" id="donation_email" name="email"><br><br>
+            <!-- bubble-list of clothing -->
+            <p>What are you donating today?</p>
+            <input type="radio" class="radio" id="clothing1" name="clothing" value="Tops">
+            <label for="clothing1"> Tops</label><br>
+            <input type="radio" class="radio" id="clothing2" name="clothing" value="Bottoms">
+            <label for="clothing2"> Bottoms</label><br>
+            <input type="radio" class="radio" id="clothing3" name="clothing" value="Dresses">
+            <label for="clothing3"> Dresses</label><br>
+            <input type="radio" class="radio" id="clothing4" name="clothing" value="Sweatshirts">
+            <label for="clothing4"> Sweatshirts</label><br>
+            <input type="radio" class="radio" id="clothing5" name="clothing" value="Outerwear">
+            <label for="clothing5"> Outerwear</label><br>
+            <input type="radio" class="radio" id="clothing6" name="clothing" value="Suits">
+            <label for="clothing6"> Suits</label><br>
+            <input type="radio" class="radio" id="clothing7" name="clothing" value="Activewear">
+            <label for="clothing7"> Activewear</label><br><br>
+            <!--file upload for clothing pictures-->
+            <label for="avatar">Upload a front photo of your item.</label>
+            <input type="file" id="front" name="images" accept="image/png, image/jpeg"><br><br>
+            <label for="avatar">Upload a back photo of your item.</label>
+            <input type="file" id="back" name="images" accept="image/png, image/jpeg"><br><br>
+            <!--checklist of nonprofits-->
+            <p>What are you donating today?</p>
+            <input type="checkbox" class = "checkbox" id="np1" name="np" value="American Red Cross">
+            <label for="np1"> American Red Cross</label><br>
+            <input type="checkbox" class = "checkbox" id="np2" name="np" value="American Heart Association">
+            <label for="np2"> American Heart Association</label><br>
+            <input type="checkbox" class = "checkbox" id="np3" name="np" value="St. Jude's Children Research Hospital">
+            <label for="np3"> St. Jude's Children Research Hospital</label><br>
+            <input type="checkbox" class = "checkbox" id="np4" name="np" value="Leukemia and Lymphoma Society">
+            <label for="np4"> Leukemia and Lymphoma Society</label><br>
+            <input type="checkbox" class = "checkbox" id="np5" name="np" value="Feeding America">
+            <label for="np5"> Feeding America</label><br>
+            <input type="checkbox" class = "checkbox" id="np6" name="np" value="Planned Parenthood Federation of America">
+            <label for="np6"> Planned Parenthood Federation of America</label><br>
+            <input type="checkbox" class = "checkbox" id="np7" name="np" value="Make-A-Wish Foundation">
+            <label for="np7"> Make-A-Wish Foundation</label><br>
+            <input type="checkbox" class = "checkbox" id="np8" name="np" value="Alzheimer's Association">
+            <label for="np8"> Alzheimer's Association</label><br>
+            <input type="checkbox" class = "checkbox" id="np9" name="np" value="American Civil Liberties Union Foundation">
+            <label for="np8"> American Civil Liberties Union Foundation</label><br>
+            <input type="checkbox" class = "checkbox" id="np10" name="np" value="UNICEF">
+            <label for="np9"> UNICEF</label><br>
+            <input type="checkbox" class = "checkbox" id="np11" name="np" value="Genders and Sexualities Alliance Network">
+            <label for="np10"> Genders and Sexualities Alliance Network</label><br>
+            <input type="checkbox" class = "checkbox" id="np12" name="np" value="The Center for Constitutional Rights">
+            <label for="np11"> The Center for Constitutional Rights</label><br>
+            <input type="checkbox" class = "checkbox" id="np13" name="np" value="National Immigration Forum">
+            <label for="np12"> National Immigration Forum</label><br><br>
+          </form>
+          <button id="submit">Submit</button>
+          <!--                         <div class="box">
                             <div class="field is-grouped">
                                 <p class="control is-expanded">
                                     <input class="input" type="text" placeholder="Enter your clothing item's name">
@@ -79,25 +144,38 @@
                                     </a>
                                 </p>
                             </div>
-                        </div>
-                      <div class="box">
-                            <div class="field is-grouped">
-                                <p class="control is-expanded">
-                                    <input class="input" type="text" placeholder="Enter your email">
-                                </p>
-                                <p class="control">
-                                    <a class="button is-info">
-                                        Notify Me
-                                    </a>
-                                </p>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
+                        </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-    <script async type="text/javascript" src="../js/bulma.js"></script>
+  <!--   <script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDWTdVygi4do_Wy2qopydqxvnhvWrqYQNk",
+      authDomain: "donate-upload-base.firebaseapp.com",
+      projectId: "donate-upload-base",
+      storageBucket: "donate-upload-base.appspot.com",
+      messagingSenderId: "241084912939",
+      appId: "1:241084912939:web:222a6d99dbc0a11cb9e16e",
+      measurementId: "G-J9ECSCK4SB"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> -->
+
+  <script type="module" src="donate-upload.js"></script>
+
 </body>
 
 </html>

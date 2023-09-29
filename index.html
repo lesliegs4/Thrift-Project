@@ -5,16 +5,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Parallax - Free Bulma template</title>
+  <title>The Thrift Project</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   <section class="hero is-medium">
+    <div class="navbar-end">
+      <span class="navbar-item">
+        <a class="button is-white is-outlined" href="login.html">
+          <span>Log In</span>
+        </a>
+      </span>
+    </div>
     <div class="hero-body">
       <div class="container">
         <h1 class="title is-1 ">Thrift Project</h1>
@@ -32,7 +39,8 @@
           <div class="column is-6 is-offset-6">
             <h1 class="title is-1 ">Our Mission</h1>
             <hr class="content-divider">
-            <h2 class="subtitle">Our goal is to combat the dangers of fast fashion while providing high-quality clothing at a low price and encouraging support for nonprofits and their causes. </h2>
+            <h2 class="subtitle">Our goal is to combat the dangers of fast fashion while providing high-quality clothing
+              at a low price and encouraging support for nonprofits and their causes. </h2>
             <a href="ourmission.html" class="button is-white is-inverted">Learn More&ensp;<i
                 class="fad fa-chevron-right"></i></a>
           </div>
@@ -48,8 +56,9 @@
             <h1 class="title is-1 ">Nonprofits</h1>
             <hr class="content-divider">
             <h2 class="subtitle">Click here to learn more about the charities and nonprofits we support.</h2>
-            
-            <a href="nonprofits.html" class="button is-white is-inverted">View our partners&ensp;<i class="fad fa-chevron-right"></i></a>
+
+            <a href="nonprofits.html" class="button is-white is-inverted">View our partners&ensp;<i
+                class="fad fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -62,16 +71,16 @@
           <div class="column is-6 is-offset-6">
             <h1 class="title is-1 ">Contributor</h1>
             <hr class="content-divider">
-            <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure minus nam necessitatibus
-              neque in perferendis eveniet dolorum assumenda dolores accusamus.</h2>
-            <a href="donate.html" class="button is-white is-inverted">Donate!&ensp;<i class="fad fa-chevron-right"></i></a>
+            <h2 class="subtitle">If you have any clothing that you wish to donate click here.</h2>
+            <a href="donate.html" class="button is-white is-inverted">Donate!&ensp;<i
+                class="fad fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="cta va" id="bottom">
-    <div class="container">
+  <section class="cta va" id="header">
+    <div class="container" id="contact">
       <div class="columns">
         <div class="column is-6">
           <h1 class="title is-1 ">Contact Us</h1>
@@ -82,14 +91,22 @@
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="Jon Snow">
+              <input class="input is-medium" type="text" placeholder="Enter your name">
             </div>
           </div>
           <br>
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input is-medium" type="email" placeholder="jon@winterfell.com">
+              <input class="input is-medium" type="email" placeholder="Enter your email adress">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <input class="input is-medium" type="message" placeholder="Hi, I am inquiring about...">
             </div>
           </div>
           <br>

@@ -7,21 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thrift Project- Our Mission</title>
   <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <section class="hero is-info is-fullheight" id="ourmission">
+  <section class="hero is-info is-fullheight" id="login">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-img" href="index.html" id="logo">
-              <img src="https://cdn.discordapp.com/attachments/779089332539359262/1004112277974290432/Untitled_Notebook-2.jpg"
+              <img
+                src="https://cdn.discordapp.com/attachments/779089332539359262/1004112277974290432/Untitled_Notebook-2.jpg"
                 alt="Logo" width="150" height="200">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
@@ -34,7 +35,6 @@
             <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="shop.html">
-
                   <span>Shop</span>
                 </a>
               </span>
@@ -63,18 +63,24 @@
         </div>
       </nav>
     </div>
-
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="column is-6 is-offset-3">
-          <h1 class="title">
-            Our Mission
-          </h1>
-          <h2 class="subtitle">
-            Our goal is to combat the dangers of fast fashion while providing high-quality clothing at a low price and encouraging support for nonprofits and their causes.
-          </h2>
-        </div>
+    <div class="container has-text-centered">
+      <form>
+        <br><br><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password"><br><br>
+      </form>
+      <div id="button container">
+        <button id="log-in">Login</button>
+        <button id="register">Register</button>
       </div>
     </div>
+  </section>
+</body>
+<script async type="module" src="script.js"></script>
+
 
 </html>

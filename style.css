@@ -2,24 +2,30 @@
 .hero,
 .cta {
   background:  #957f5f;
-  height: 800px;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 .hero,
-.cta .bottom{
+.cta .header{
   background: url("https://www.instyle.com/thmb/XQYQNgAFNsvhalJ0-jtZ2FQCaBE=/2000x1125/smart/filters:no_upscale():focal(999x0:1001x2)/closet-lead-2000-5b8bd03a1a6044aeb146a92b5e52d24c.jpg");
-  height: 800px;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+/*  
+  https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80 */
+  
+}
+#contact {
+  background:  #957f5f;
+  padding-top: 50px;
 }
 
 .cta {
   height: 500px;
-  
 }
 
 footer {
   color: white;
-  height: 50px;
+  height: 5px;
   background: #957f5f !important;
 }
 
@@ -37,7 +43,7 @@ footer a {
   color: white;
   font-weight: 800;
   font-size: 4rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-top: 30px;
 }
 
@@ -104,7 +110,7 @@ input {
 }
 
 input::placeholder {
-  color: white !important;
+  color: #dcdbdb !important;
 }
 
 /* shop.html css */
@@ -112,9 +118,9 @@ input::placeholder {
 html,body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
-.hero.is-info {
+/* .hero.is-info {
   background: #957f5f;
-}
+} */
 .hero .nav, .hero.is-success .nav {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -122,4 +128,115 @@ html,body {
 .hero .subtitle {
   padding: 3rem 0;
   line-height: 1.5;
+}
+#donate {
+  background: #957f5f;
+}
+#shop{
+  background: #88b992;
+}
+#ourmission {
+  background: url("https://images.unsplash.com/photo-1561365452-adb940139ffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1712&q=80");
+}
+#login{
+  background: #b38eb4;
+  font-size: 1.5rem;
+  text-align: center;
+  
+}
+/* columns in the nonprofits section */
+.column-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column-2 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-2 img:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+/* arrow down scroll */
+.arrow {
+  height: 3vw;
+  width: 3vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.down-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+/* adding to cart buttons 
+.popup {
+  width: 600px;
+  background: #fff;
+  border-radius: 6px;
+  position: absulote;
+  top: 50%;
+  left: 50%
+  transform: translate(-90%,-90%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden; 
+}
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: - 2px 5px rgba(o, 0, 0, 0.2);
+}
+.popup h2{
+  font-size: 28px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color:#fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+*/
+
+
+button {
+  background: #16356f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Lato';
+  margin: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background: #15752d;
 }

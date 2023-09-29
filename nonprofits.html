@@ -5,23 +5,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing - Free Bulma template</title>
+  <title>Thrift Project- Nonprofits</title>
   <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <section class="hero is-info is-fullheight">
+  <section class="hero is-info is-fullheight" id="nonprofits">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item" href="../">
-              <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+            <a class="navbar-img" href="index.html" id="logo">
+              <img
+                src="https://cdn.discordapp.com/attachments/779089332539359262/1004112277974290432/Untitled_Notebook-2.jpg"
+                alt="Logo" width="150" height="200">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -32,7 +34,7 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="shop.htmlhtml">
+                <a class="button is-white is-outlined" href="shop.html">
 
                   <span>Shop</span>
                 </a>
@@ -43,14 +45,18 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
+                <a class="button is-white is-outlined" href="nonprofits.html">
                   <span>Nonprofits</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined"
-                  href="donate.html">
+                <a class="button is-white is-outlined" href="donate.html">
                   <span>Donate</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="login.html">
+                  <span>Log In</span>
                 </a>
               </span>
             </div>
@@ -60,33 +66,80 @@
     </div>
 
 
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-6 is-offset-3">
-                        <h1 class="title">
-                            Coming Soon
-                        </h1>
-                        <h2 class="subtitle">
-                            $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-                        </h2>
-                        <div class="box">
-                            <div class="field is-grouped">
-                                <p class="control is-expanded">
-                                    <input class="input" type="text" placeholder="Enter your email">
-                                </p>
-                                <p class="control">
-                                    <a class="button is-info">
-                                        Notify Me
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+          <h1 class="title">
+            Nonprofits
+          </h1>
+          <h2 class="subtitle">
+            Our nonprofit partners include the following organizations.
+          </h2>
+          <div class="down-scroll">
+            <a data-scroll href="#full">
+              <div class="arrow"></div>
+            </a>
+          </div>
+          <div id="full"></div>
+        </div>
+      </div>
+    </div>
 
-    </section>
-    <script async type="text/javascript" src="../js/bulma.js"></script>
+  </section>
+  <script async type="text/javascript" src="../js/bulma.js"></script>
 </body>
 
 </html>
+<div class="column-1">
+  <!-- first column -->
+  <section class="column-2">
+    <a
+      href="https://www.redcross.org/?cid=generic&med=cpc&source=google&scode=RSG00000E017&gclid=CjwKCAjwlqOXBhBqEiwA-hhitForeZ_jj8mpCT5aTaH3PRjcBFJRcfbfeLLVWxpa5efJcqvFxFximxoCB-YQAvD_BwE&gclsrc=aw.ds">
+      <img alt="American Red Cross"
+        src="https://media.defense.gov/2018/Sep/17/2001966913/-1/-1/0/180917-F-ZZ000-1001.JPG">
+      <a href="https://www.heart.org/">
+        <img alt="American Heart Association"
+          src="https://www.viamarkvideo.com/wp-content/uploads/2019/12/services.AmHeartLogo1_a0792b4a-5056-a348-3a5293804a0ff3ed.gif">
+        <a
+          href="https://www.stjude.org/promotion/impact-giving-pm.html?sc_dcm=58700006942402311&sc_cid=kwp&sc_cat=b&ds_rl=1285465&gclid=CjwKCAjwlqOXBhBqEiwA-hhitJKmehB-GWtaAovj4DD8ceU9J65M5A-uI1TH2pOo5WCXbqrLTW_dSxoCCtIQAvD_BwE&gclsrc=aw.ds">
+          <img alt="St. Jude's Children Research Hospital"
+            src="https://evolytics.com/wp-content/uploads/2020/06/st-jude-childrens-research-hospital-logo-vector.png">
+  </section>
+  <!-- second column -->
+  <section class="column-2">
+    <a
+      href="https://www.lls.org/?_ga=2.236350472.822003987.1659465567-1432465222.1659465567&_gac=1.48498388.1659465567.CjwKCAjwlqOXBhBqEiwA-hhitMvCJClVF4jm0HUdlh-Wj2JfFV6p_dMLmBhqJA08ep_6yfDH-91t9BoCd4sQAvD_BwE">
+      <img alt="Leukemia and Lymphoma Society" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/LLS_logo_.jpg">
+      <a href="https://www.feedingamerica.org/">
+        <img alt="Feeding America" src="https://i.pinimg.com/736x/8e/f1/ba/8ef1bac69afe277207b9826b448f4f4c.jpg">
+        <a href="https://www.plannedparenthood.org/">
+          <img alt="Planned Parenthood Federation of America"
+            src="https://hudsonvalleypress.com/wp-content/uploads/2019/04/planned-parenthood-logo.jpg">
+  </section>
+  <!-- third column -->
+  <section class="column-2">
+    <a href="https://wish.org/">
+      <img alt="Make-A-Wish Foundation"
+        src="https://www.worldwish.org/wp-content/uploads/2022/01/make-a-wish-vector-logo.png">
+      <a href="https://www.alz.org/">
+        <img alt="Alzheimer's Association"
+          src="https://patch.com/img/biz/sites/default/files/users/22954300/20170810130638/alzstacked_rgb_copy.jpg">
+        <a href="https://www.aclu.org/">
+          <img alt="American Civil Liberties Union Foundation"
+            src="https://www.davisvanguard.org/wp-content/uploads/2021/02/aclu.jpg">
+  </section>
+  <!-- fourth column -->
+  <section class="column-2">
+    <a href="https://www.unicef.org/">
+      <img alt="UNICEF" src="https://www.gavi.org/sites/default/files/2019-11/unicef.png">
+      <a href="https://gsanetwork.org/mission-vision-history/">
+        <img alt="Genders and Sexualities Alliance Network"
+          src="https://bucsblade.com/wp-content/uploads/2021/10/bWWnyYbAHXfiEaA-800x450-noPad.jpg">
+        <a href="https://ccrjustice.org/">
+          <img alt="The Center for Constitutional Rights"
+            src="https://ccrjustice.org/sites/default/files/images/ccr_logo_opengraph.png">
+          <a href="https://immigrationforum.org/">
+            <img alt="National Immigration Forum"
+              src="https://immigrationforum.org/wp-content/uploads/2018/08/facebook-tag-image.png">
+  </section>
+</div>
