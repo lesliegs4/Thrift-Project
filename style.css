@@ -1,10 +1,15 @@
 /* index.html css*/
 .hero,
 .cta {
-  background: #957f5f;
+  background:  #957f5f;
   height: 800px;
-  opacity: 0.7;
-  
+  padding-top: 100px;
+}
+.hero,
+.cta .bottom{
+  background: url("https://www.instyle.com/thmb/XQYQNgAFNsvhalJ0-jtZ2FQCaBE=/2000x1125/smart/filters:no_upscale():focal(999x0:1001x2)/closet-lead-2000-5b8bd03a1a6044aeb146a92b5e52d24c.jpg");
+  height: 800px;
+
 }
 
 .cta {
@@ -81,7 +86,7 @@ hr.content-divider {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #parallax-3 hr {
@@ -94,7 +99,7 @@ hr.content-divider {
 
 input {
   background: transparent !important;
-  border: 1px solid turquoise !important;
+  border: 2px solid white !important;
   color: white !important;
 }
 
